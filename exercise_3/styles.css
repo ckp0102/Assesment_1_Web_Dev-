@@ -1,0 +1,89 @@
+/* Background */
+body {
+    background: #2b2b2b;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+}
+
+/* Grey container */
+header, main, footer {
+    width: 720px;
+    margin: 0 auto;
+    background: #d9d9d9;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Top section */
+.top-section {
+    display: flex;
+    gap: 20px;
+}
+
+.text {
+    width: 60%;
+    font-size: 14px;
+}
+
+.side-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Video and image row */
+.media-row {
+    display: flex;
+}
+
+.media-row video,
+.media-row img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Remove gaps under images */
+img, video {
+    display: block;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
