@@ -1,0 +1,95 @@
+/* 1. Base Setup */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Matches the light grey background in the screenshot */
+    background-color: #dcdcdc; 
+    font-family: 'Open Sans', sans-serif; /* Clean, legible body font */
+    color: #222; /* Dark grey text for readability */
+    line-height: 1.5;
+    margin: 0;
+    padding: 40px 20px; /* Space around the card */
+    display: flex;
+    justify-content: center; /* Centers the card horizontally */
+}
+
+/* 2. The White Card Container */
+.main-card {
+    background-color: #ffffff;
+    max-width: 800px;
+    width: 100%;
+    padding: 50px 60px;
+    border-radius: 25px; /* Matches the rounded corners in screenshot */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Adds a subtle modern shadow */
+}
+
+/* 3. Typography - Headers */
+h1 {
+    /* The very big "Our Story" */
+    font-family: 'Anton', sans-serif; /* Condensed, bold font */
+    font-size: 5rem;
+    color: #4a9e28; /* The specific grass green from the image */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.sub-heading {
+    /* "Hit the Ground Running", "How Does it Work?" */
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    color: #4a9e28;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+/* 4. Body Paragraphs */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+/* 5. The "Did you know?" Green Box */
+.green-box {
+    background-color: #4a9e28; /* Same green as headers */
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.green-box h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: none; /* Keep natural case */
+}
+
+.green-box p {
+    color: white; /* Ensure text inside box is white */
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* 6. Mobile Responsiveness */
+@media (max-width: 600px) {
+    .main-card {
+        padding: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    .sub-heading {
+        font-size: 2rem;
+    }
+}
